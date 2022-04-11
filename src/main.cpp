@@ -4,9 +4,9 @@
 #include "config.h"
 
 void print_help() {
-	std::cout << "MINESWEEPER" << std::endl;
-	std::cout << "Usage:" << std::endl << "minesweeper <mode> <custom width> <custom height>" << std::endl;
-	std::cout << "Modes:" << std::endl;
+	std::cout << "MINESWEEPER" << std::endl << std::endl;
+	std::cout << "Usage:" << std::endl << "minesweeper <mode> <custom width> <custom height>" << std::endl << std::endl;
+	std::cout << "Modes:" << std::endl << std::endl;
 	std::cout << "Beginner: 9x9 - 10 mines" << std::endl;
 	std::cout << "Intermediate: 16x16 - 40 mines" << std::endl;
 	std::cout << "Advanced: 30x16 - 99 mines" << std::endl;
@@ -40,6 +40,5 @@ int main(int argc, char** argv) {
 	} else {
 		print_help();
 	}
-	std::cout << width << "x" << height << std::endl;
 	return 0;
 }
